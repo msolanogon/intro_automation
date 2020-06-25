@@ -348,6 +348,13 @@
       ],
       "value": ""
     }, {
+      "id": "c732758d-9578-463f-8e84-6c921ea53f4f",
+      "comment": "",
+      "command": "waitForElementVisible",
+      "target": "id=username",
+      "targets": [],
+      "value": "30000"
+    }, {
       "id": "7d2ab203-989c-4f3e-9718-c5a7fd70f633",
       "comment": "",
       "command": "click",
@@ -421,6 +428,13 @@
       ],
       "value": ""
     }, {
+      "id": "95dae3a2-333c-4a95-b2f9-d6b09cde8630",
+      "comment": "",
+      "command": "waitForElementVisible",
+      "target": "linkText=Create a new song",
+      "targets": [],
+      "value": "30000"
+    }, {
       "id": "3da743c1-84f8-42de-a76a-e0092969fda8",
       "comment": "",
       "command": "click",
@@ -470,7 +484,7 @@
         ["xpath=//input[@id='title']", "xpath:attributes"],
         ["xpath=//input", "xpath:position"]
       ],
-      "value": "Otra"
+      "value": "Otra_123321456654"
     }, {
       "id": "d63e37fe-ecec-4c99-b3b5-91adb1e6919d",
       "comment": "",
@@ -575,7 +589,29 @@
       ],
       "value": ""
     }, {
-      "id": "5139461e-a3fe-4e87-aa80-4a3a37b6e21c",
+      "id": "fcfbca6b-7fb1-4051-88e9-1a98ccd18be0",
+      "comment": "",
+      "command": "assertElementPresent",
+      "target": "linkText=Otra_123321456654",
+      "targets": [],
+      "value": ""
+    }, {
+      "id": "bf2f311a-9ec9-4270-9e6d-1ca3749d96a1",
+      "comment": "",
+      "command": "click",
+      "target": "linkText=Otra_123321456654",
+      "targets": [
+        ["linkText=Otra", "linkText"],
+        ["css=li:nth-child(83) > a", "css:finder"],
+        ["xpath=//a[contains(text(),'Otra')]", "xpath:link"],
+        ["xpath=//ul[@id='songs']/li[83]/a", "xpath:idRelative"],
+        ["xpath=//a[contains(@href, '/songs/127')]", "xpath:href"],
+        ["xpath=//li[83]/a", "xpath:position"],
+        ["xpath=//a[contains(.,'Otra')]", "xpath:innerText"]
+      ],
+      "value": ""
+    }, {
+      "id": "b8db661d-cdbc-4f99-9db8-4d7fbf5378ba",
       "comment": "",
       "command": "click",
       "target": "linkText=log out",
@@ -586,6 +622,244 @@
         ["xpath=//a[contains(@href, '/logout')]", "xpath:href"],
         ["xpath=//footer/a", "xpath:position"],
         ["xpath=//a[contains(.,'log out')]", "xpath:innerText"]
+      ],
+      "value": ""
+    }]
+  }, {
+    "id": "9dab699b-d58e-4987-9979-0079aaf1715f",
+    "name": "DeleteSong",
+    "commands": [{
+      "id": "5757c9cc-45c9-4f08-91f5-434b60abda53",
+      "comment": "",
+      "command": "open",
+      "target": "/",
+      "targets": [],
+      "value": ""
+    }, {
+      "id": "137ebca4-5179-4f67-ac8e-40c02ca002e8",
+      "comment": "",
+      "command": "setWindowSize",
+      "target": "697x728",
+      "targets": [],
+      "value": ""
+    }, {
+      "id": "c9a5da05-3462-4052-bb2f-a0eb2f2f6481",
+      "comment": "",
+      "command": "click",
+      "target": "linkText=log in",
+      "targets": [
+        ["linkText=log in", "linkText"],
+        ["css=footer > a", "css:finder"],
+        ["xpath=//a[contains(text(),'log in')]", "xpath:link"],
+        ["xpath=//a[contains(@href, '/login')]", "xpath:href"],
+        ["xpath=//footer/a", "xpath:position"],
+        ["xpath=//a[contains(.,'log in')]", "xpath:innerText"]
+      ],
+      "value": ""
+    }, {
+      "id": "4c66d80d-9c47-4d41-b8ba-7d1b8edec482",
+      "comment": "",
+      "command": "click",
+      "target": "id=username",
+      "targets": [
+        ["id=username", "id"],
+        ["name=username", "name"],
+        ["css=#username", "css:finder"],
+        ["xpath=//input[@id='username']", "xpath:attributes"],
+        ["xpath=//input", "xpath:position"]
+      ],
+      "value": ""
+    }, {
+      "id": "275ec2f5-00ae-4242-9320-51535d72b7fa",
+      "comment": "",
+      "command": "type",
+      "target": "id=username",
+      "targets": [
+        ["id=username", "id"],
+        ["name=username", "name"],
+        ["css=#username", "css:finder"],
+        ["xpath=//input[@id='username']", "xpath:attributes"],
+        ["xpath=//input", "xpath:position"]
+      ],
+      "value": "frank"
+    }, {
+      "id": "d302e021-f14f-4c0f-bb53-5c294be27e01",
+      "comment": "",
+      "command": "type",
+      "target": "id=password",
+      "targets": [
+        ["id=password", "id"],
+        ["name=password", "name"],
+        ["css=#password", "css:finder"],
+        ["xpath=//input[@id='password']", "xpath:attributes"],
+        ["xpath=//input[2]", "xpath:position"]
+      ],
+      "value": "sinatra"
+    }, {
+      "id": "941ff342-0dc6-43a5-ba31-780c1bcab055",
+      "comment": "",
+      "command": "click",
+      "target": "css=input:nth-child(5)",
+      "targets": [
+        ["css=input:nth-child(5)", "css:finder"],
+        ["xpath=//input[@value='Log In']", "xpath:attributes"],
+        ["xpath=//input[3]", "xpath:position"]
+      ],
+      "value": ""
+    }, {
+      "id": "fc1cc404-c87e-4e59-97c2-881900e7e291",
+      "comment": "",
+      "command": "assertElementPresent",
+      "target": "linkText=Otra_123321456654",
+      "targets": [],
+      "value": ""
+    }, {
+      "id": "a9d025da-6f09-4617-a797-d7e4c6bcfa5e",
+      "comment": "",
+      "command": "click",
+      "target": "linkText=Otra_123321456654",
+      "targets": [
+        ["linkText=Otra_123321456654", "linkText"],
+        ["css=li:nth-child(118) > a", "css:finder"],
+        ["xpath=//a[contains(text(),'Otra_123321456654')]", "xpath:link"],
+        ["xpath=//ul[@id='songs']/li[118]/a", "xpath:idRelative"],
+        ["xpath=//a[contains(@href, '/songs/285')]", "xpath:href"],
+        ["xpath=//li[118]/a", "xpath:position"],
+        ["xpath=//a[contains(.,'Otra_123321456654')]", "xpath:innerText"]
+      ],
+      "value": ""
+    }, {
+      "id": "0119e025-b856-4bc0-8fe0-306413825482",
+      "comment": "",
+      "command": "click",
+      "target": "css=section > h1",
+      "targets": [
+        ["css=section > h1", "css:finder"],
+        ["xpath=//section/h1", "xpath:position"],
+        ["xpath=//h1[contains(.,'Otra_123321456654')]", "xpath:innerText"]
+      ],
+      "value": ""
+    }, {
+      "id": "c0063f4b-6891-4f25-b78e-aafb9bb9f45b",
+      "comment": "",
+      "command": "click",
+      "target": "css=input:nth-child(2)",
+      "targets": [
+        ["css=input:nth-child(2)", "css:finder"],
+        ["xpath=//input[@value='delete this song']", "xpath:attributes"],
+        ["xpath=//input[2]", "xpath:position"]
+      ],
+      "value": ""
+    }, {
+      "id": "78b1a9d9-8bb7-4ed2-be9e-e753c4a906fd",
+      "comment": "",
+      "command": "click",
+      "target": "css=.flash",
+      "targets": [
+        ["css=.flash", "css:finder"],
+        ["xpath=//div[@id='flash']/div", "xpath:idRelative"],
+        ["xpath=//div/div", "xpath:position"]
+      ],
+      "value": ""
+    }, {
+      "id": "fd3a70c0-a55c-4449-9252-88b3ce20bb86",
+      "comment": "",
+      "command": "click",
+      "target": "linkText=Otra_123321456654",
+      "targets": [
+        ["linkText=Otra_123321456654", "linkText"],
+        ["css=li:nth-child(118) > a", "css:finder"],
+        ["xpath=//a[contains(text(),'Otra_123321456654')]", "xpath:link"],
+        ["xpath=//ul[@id='songs']/li[118]/a", "xpath:idRelative"],
+        ["xpath=//a[contains(@href, '/songs/286')]", "xpath:href"],
+        ["xpath=//li[118]/a", "xpath:position"],
+        ["xpath=//a[contains(.,'Otra_123321456654')]", "xpath:innerText"]
+      ],
+      "value": ""
+    }, {
+      "id": "849ee961-de50-4104-804e-a82009b8edae",
+      "comment": "",
+      "command": "waitForElementVisible",
+      "target": "xpath=//h1[contains(.,'Otra_123321456654')]",
+      "targets": [],
+      "value": "30000"
+    }, {
+      "id": "7cc3a06b-31f9-4140-b570-ad90b8289cd7",
+      "comment": "",
+      "command": "click",
+      "target": "xpath=//h1[contains(.,'Otra_123321456654')]",
+      "targets": [
+        ["css=section > h1", "css:finder"],
+        ["xpath=//section/h1", "xpath:position"],
+        ["xpath=//h1[contains(.,'Otra_123321456654')]", "xpath:innerText"]
+      ],
+      "value": ""
+    }, {
+      "id": "4046c1b0-fce4-4fdb-b56e-6de97ac7a63d",
+      "comment": "",
+      "command": "click",
+      "target": "css=input:nth-child(2)",
+      "targets": [
+        ["css=input:nth-child(2)", "css:finder"],
+        ["xpath=//input[@value='delete this song']", "xpath:attributes"],
+        ["xpath=//input[2]", "xpath:position"]
+      ],
+      "value": ""
+    }, {
+      "id": "c0fe878b-16b3-4849-bc49-fafc133dd450",
+      "comment": "",
+      "command": "waitForElementVisible",
+      "target": "xpath=//div[@id='flash']/div",
+      "targets": [],
+      "value": "30000"
+    }, {
+      "id": "22663a66-c103-4fda-b3b0-bdf3e0079008",
+      "comment": "",
+      "command": "click",
+      "target": "xpath=//div[@id='flash']/div",
+      "targets": [
+        ["css=.flash", "css:finder"],
+        ["xpath=//div[@id='flash']/div", "xpath:idRelative"],
+        ["xpath=//div/div", "xpath:position"]
+      ],
+      "value": ""
+    }, {
+      "id": "534865f7-ddd4-4357-bf09-99fb20160621",
+      "comment": "",
+      "command": "assertElementNotPresent",
+      "target": "xpath=//h1[contains(.,'Otra_123321456654')]",
+      "targets": [],
+      "value": ""
+    }, {
+      "id": "15458e04-7c72-4d2d-a730-f966e1d10eae",
+      "comment": "",
+      "command": "click",
+      "target": "linkText=log out",
+      "targets": [
+        ["linkText=log out", "linkText"],
+        ["css=footer > a", "css:finder"],
+        ["xpath=//a[contains(text(),'log out')]", "xpath:link"],
+        ["xpath=//a[contains(@href, '/logout')]", "xpath:href"],
+        ["xpath=//footer/a", "xpath:position"],
+        ["xpath=//a[contains(.,'log out')]", "xpath:innerText"]
+      ],
+      "value": ""
+    }, {
+      "id": "e34c950d-58ca-4d8c-a022-4b9e811daf0c",
+      "comment": "",
+      "command": "waitForElementVisible",
+      "target": "xpath=//div[@id='flash']/div",
+      "targets": [],
+      "value": "30000"
+    }, {
+      "id": "89b6e896-f49a-46b8-98ae-126c891e919b",
+      "comment": "",
+      "command": "click",
+      "target": "xpath=//div[@id='flash']/div",
+      "targets": [
+        ["css=.flash", "css:finder"],
+        ["xpath=//div[@id='flash']/div", "xpath:idRelative"],
+        ["xpath=//div/div", "xpath:position"]
       ],
       "value": ""
     }]
